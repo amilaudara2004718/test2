@@ -6,6 +6,10 @@ const SearchBar = ({ onSearch, isLoading }) => {
   const [query, setQuery] = useState("");
 
   const handleSearch = () => {
+        if (!query || !query.startsWith("http")) {
+        alert("Please enter a valid URL.");
+        return;
+    }
     if (onSearch) {
       onSearch(query);
     }
