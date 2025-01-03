@@ -1,0 +1,15 @@
+{
+    "builds": [
+      {
+        "src": "index.js",
+        "use": "@vercel/node",
+        "config": {
+          "maxDuration": 60
+        }
+      }
+    ],
+    "env": {
+      "YT_DLP_PATH": "./downloads/yt-dlp"
+    }
+  }
+  
