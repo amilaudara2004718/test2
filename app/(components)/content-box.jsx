@@ -3,6 +3,13 @@ import React from 'react'
 import DownloadOptions from './download-options'
 
 function ContentBox({ data }) {
+      if (!data || !data.title) {
+        return (
+            <div className="flex justify-center items-center mt-4">
+                <p className="text-red-600">No data available or an error occurred.</p>
+            </div>
+        );
+    }
   const { title, duration,thumbnail, items, error } = data;
 
 // Display error message if an error occurs
