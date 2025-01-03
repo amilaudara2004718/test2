@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "curl -L https://github.com/yt-dlp/yt-dlp/releases/download/latest/yt-dlp -o ./bin/yt-dlp && chmod +x ./bin/yt-dlp"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
