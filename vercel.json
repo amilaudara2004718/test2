@@ -1,8 +1,0 @@
-{
-  "functions": {
-    "app/api/scrape/*.js": {
-      "includeFiles": "downloads/yt-dlp"
-    }
-  }
-}
-

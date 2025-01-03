@@ -12,15 +12,8 @@ function Engine() {
   const handleSearch = async (query) => {
     setIsLoading(true);
     try {
-      // Make API request here (simulated with a timeout for demonstration)
       const response = await fetch(`/api/scrape?url=${encodeURIComponent(query)}`);
       const data = await response.json();
-
-
-    
-  
-      
-      // Assuming API response structure matches the videoData shape
       setVideoData(data);
     } catch (error) {
       console.error("Error fetching data:", error);
